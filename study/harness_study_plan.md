@@ -2,6 +2,7 @@
 
 > **기반 코드**: `Linear-Coding-Agent-Harness` (Cole Medin)
 > **목표**: 코드 한 줄 한 줄의 역할을 이해하고, 직접 미니 구현을 쌓아올린다.
+> **진행 방식**: "Chapter N 진행할게. 스케폴딩 만들어줘" → 스케폴딩 받기 → TODO 직접 구현 → 이해해야 할 질문 Q&A
 
 ---
 
@@ -324,7 +325,7 @@ for tool_name, tool_input in scenario:
 ```python
 # ch6_mini_harness.py
 # Ch1: asyncio 루프
-# Ch2: Anthropic SDK 통신
+# Ch2: OpenAI API 통신
 # Ch3: 보안 훅
 # Ch4: 파일 기반 상태 관리
 # Ch5: 가짜 도구 디스패처
@@ -343,8 +344,8 @@ for tool_name, tool_input in scenario:
 
 | Chapter | 개념                      | 대응 파일                              | 미니 구현              | 완료 |
 | ------- | ------------------------- | -------------------------------------- | ---------------------- | ---- |
-| 1       | asyncio 이벤트 루프       | `autonomous_agent_demo.py`, `agent.py` | `ch1_event_loop.py`    | [ ]  |
-| 2       | SDK + LLM 스트리밍 통신   | `agent.py`, `client.py`                | `ch2_llm_chat.py`      | [ ]  |
+| 1       | asyncio 이벤트 루프       | `autonomous_agent_demo.py`, `agent.py` | `ch1_event_loop.py`    | [x]  |
+| 2       | SDK + LLM 스트리밍 통신   | `agent.py`, `client.py`                | `ch2_llm_chat.py`      | [x]  |
 | 3       | 보안 훅 (Bash Allowlist)  | `security.py`, `client.py`             | `ch3_security_hook.py` | [ ]  |
 | 4       | 상태 관리 + 세션 핸드오프 | `progress.py`, `agent.py`              | `ch4_state_manager.py` | [ ]  |
 | 5       | MCP 도구 연결             | `client.py`                            | `ch5_mock_tools.py`    | [ ]  |
